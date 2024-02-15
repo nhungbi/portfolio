@@ -3,9 +3,42 @@ body {
        and use the OS’s UI font as the website font
      */
     font: 100%/1.5 system-ui;
+    max-width: 100ch ;
+    margin-inline: auto;
+    padding: 2em;
+}
+
+:root {
+    --color-accent: rgb(245, 204, 210);
 }
    
 
 .panda-img {
     width: 30vw;
 }
+
+.nav-bar {
+    display: flex;
+    margin-bottom: 1em ;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: oklch(80% 3% 200);
+}
+
+.nav-link {
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    padding: .5em;
+}
+
+.current {
+    border-bottom: solid .4em oklch(90% 3% 200);
+    padding-bottom: .2em;
+}
+
+a:hover {
+    border-bottom: solid .4em var(--color-accent);
+    padding-bottom: .2em;
+}    

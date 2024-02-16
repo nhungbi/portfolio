@@ -94,3 +94,21 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.1;
     text-wrap: balance;
 }
+
+.resume {
+    display: grid;
+    gap: 1em;
+}
+
+.resume-section {
+    display: grid;
+    grid-template-columns: subgrid;
+}
+
+.resume-section h4, p{
+   margin: 5px 0px 5px 0px;
+}
+
+.resume-section h2 {
+    margin-bottom: 5px;
+}

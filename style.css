@@ -41,4 +41,56 @@ body {
 a:hover {
     border-bottom: solid .4em var(--color-accent);
     padding-bottom: .2em;
-}    
+}  
+
+
+/* try with block */
+/* .contact-elements {
+    display: block;
+    font: inherit;
+    width: 100%;
+    box-sizing: border-box;
+    margin-block: .5em;
+} */
+
+
+.contact-form {
+    display: grid;
+    grid-template-columns: auto 1fr ;
+    gap: 1em;
+}
+
+.contact-elements{
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: subgrid;
+}
+
+img {
+    max-width: 100%
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap: .5em;
+}
+
+.projects article {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+}
+
+.projects h2 {
+    margin: 0;
+}
+
+h1 {
+ font-size: 400%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    text-wrap: balance;
+}

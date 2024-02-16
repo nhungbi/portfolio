@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href="./style.css">
+    <link rel = "stylesheet" href="../style.css">
     <title>Contact</title>
 </head>
 <body>
-    <h1>Contact</h1>
-    <nav>
-        <ul>
-            <li><a target="_blank" href="../">Home</a></li>
-        </ul>
+    <nav class="nav-bar">
+        <a class="nav-link" href="../"> Home </a>
+        <a class="current nav-link" >Contact</a>
+        <a class="nav-link" href="../projects/">Projects</a>
+        <a class="nav-link" href="../resume/">Resume</a>
     </nav>
+    
+    <h1>Contact</h1>
+
     <form class="contact-form" action="mailto:nhung16@mit.edu" method="POST" enctype="text/plain">
-        <label for="email">Email: </label>
-        <input name="email" type="email"/>
-        <label for="subject">Subject: </label>
-        <input name="subject" type="text"/>
-        <label for="body">Body of message: </label>
-        <textarea name="body"></textarea>
-        <button>Submit</button>
+        <label class="contact-elements" for="email">Email: 
+            <input name="email" type="email"/> </label>
+        <label class="contact-elements" for="subject">Subject:
+            <input name="subject" type="text"/> </label>
+        <label class="contact-elements" for="body">Body of message: 
+            <textarea  name="body"></textarea> </label>
+        <button class="contact-elements">Submit</button>
     </form>
 </body>
 </html>

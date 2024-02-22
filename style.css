@@ -18,11 +18,12 @@ body {
 }
 
 .nav-bar {
+    --border-color: oklch(50% 10% 200 / 40%);
     display: flex;
     margin-bottom: 1em ;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: oklch(80% 3% 200);
+    border-bottom-color: var(--border-color);
 }
 
 .nav-link {
@@ -115,4 +116,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .experiences {
     margin-top: 5px;
+}
+
+.color-scheme {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 80%;
+    font-family: inherit;
 }

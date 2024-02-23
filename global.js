@@ -43,10 +43,6 @@ for (let url in pages) {
 		url = "portfolio/" + url
 	}
 
-	if (!ARE_WE_HOME && location.host !== "127.0.0.1:5500") { // if not on hosted
-		console.log('not home 1')
-		url = "../" + url
-	}
 	// url = ARE_WE_HOME && !url.startsWith("http") ? url : "../" + url;
 	console.log(location, url)
 
@@ -54,6 +50,7 @@ for (let url in pages) {
 	a.href = url;
 	a.textContent = title;
 	// check for current
+	console.log("here", a.host, a.pathname, location)
 	if (a.host === location.host && a.pathname === location.pathname) {
 		a.classList.add("current");
 	} else {

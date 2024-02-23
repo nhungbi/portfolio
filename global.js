@@ -38,6 +38,7 @@ for (let url in pages) {
 		url = "../" + url;
 	}
 	// url = ARE_WE_HOME && !url.startsWith("http") ? url : "../" + url;
+	console.log(location)
 	if (location.host !== "127.0.0.1:5500") { // if on hosted, then need "/portfolio"
 		url = "portfolio/" + url
 	}

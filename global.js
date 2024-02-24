@@ -30,17 +30,17 @@ document.body.prepend(nav);
 
 const ARE_WE_HOME = document.documentElement.classList.contains("home");
 
-if (location.host !== '127.0.0.1:5500') {
+// if (location.host !== '127.0.0.1:5500') {
 	
-	console.log('no local',location.host )
-	pages = {
-		"portfolio": "Home",
-		/* add the rest of your pages here */
-		"portfolio/projects/": "Projects",
-		"portfolio/resume/": "Resume",
-		"portfolio/contact/": "Contact",
-	};
-}
+// 	console.log('no local',location.host )
+// 	pages = {
+// 		"portfolio": "Home",
+// 		/* add the rest of your pages here */
+// 		"portfolio/projects/": "Projects",
+// 		"portfolio/resume/": "Resume",
+// 		"portfolio/contact/": "Contact",
+// 	};
+// }
 
 for (let url in pages) {
 	let title = pages[url];

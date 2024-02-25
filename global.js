@@ -42,7 +42,7 @@ const ARE_WE_HOME = document.documentElement.classList.contains("home");
 // 	};
 // }
 
-console.log(location)
+console.log(location, ARE_WE_HOME)
 for (let url in pages) {
 	let title = pages[url];
 
